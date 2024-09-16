@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106026_GadisWulandari_A2'24_posttest2"/>
+        <attribute name="authors" value="naaga"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 12:32:02 PM"/>
+        <attribute name="created" value="bmFhZ2E7VkFMWlhEOzIwMjQtMDktMTU7MDY6MjM6MjIgUE07MjI1OQ=="/>
+        <attribute name="edited" value="bmFhZ2E7VkFMWlhEOzIwMjQtMDktMTY7MTI6MzI6MDIgUE07NjsyMzY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="Start"/>
+        </body>
+    </function>
+    <function name="Start" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namalengkap, NIM" type="String" array="False" size=""/>
+            <declare name="hargaberas" type="Integer" array="False" size=""/>
+            <declare name="diskonmawar, hargasetelahdiskonmawar, diskonsania, hargasetelahdiskonsania, diskonmaknyus, hargasetelahdiskonmaknyus" type="Real" array="False" size=""/>
+            <input variable="namalengkap"/>
+            <input variable="NIM"/>
+            <input variable="hargaberas"/>
+            <assign variable="diskonmawar" expression="11/100"/>
+            <assign variable="diskonsania" expression="14/100"/>
+            <assign variable="diskonmaknyus" expression="17/100"/>
+            <assign variable="hargasetelahdiskonmawar" expression="hargaberas-(hargaberas*diskonmawar)"/>
+            <assign variable="hargasetelahdiskonsania" expression="hargaberas-(hargaberas*diskonsania)"/>
+            <assign variable="hargasetelahdiskonmaknyus" expression="hargaberas-(hargaberas*diskonmaknyus)"/>
+            <output expression="namalengkap" newline="True"/>
+            <output expression="NIM" newline="True"/>
+            <output expression="hargasetelahdiskonmawar" newline="True"/>
+            <output expression="hargasetelahdiskonsania" newline="True"/>
+            <output expression="hargasetelahdiskonmaknyus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
